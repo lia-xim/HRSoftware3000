@@ -14,7 +14,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HRSoftware3000"
         mc:Ignorable="d"
-        Title="MainWindow" MinWidth="800" MinHeight="450" Height="450" Width="800" MaxHeight="900" MaxWidth="1600" WindowStyle="ThreeDBorderWindow" >
+        Title="HRSoftware3000" MinWidth="800" MinHeight="450" Height="450" Width="800" MaxHeight="900" MaxWidth="1600" WindowStyle="ThreeDBorderWindow" >
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -42,11 +42,8 @@
             </DockPanel>
 
             <Frame x:Name="mainWindowFrame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" NavigationUIVisibility="Hidden" Source="/Pages/dashboard.xaml" Grid.Column="1" Grid.RowSpan="5" Grid.ColumnSpan="2">
-               
+                
             </Frame>
-            
-            
-
         </Grid>
     </Grid>
 </Window>

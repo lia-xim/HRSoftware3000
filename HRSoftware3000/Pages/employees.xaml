@@ -68,11 +68,16 @@
             </FlowDocument>
         </FlowDocumentReader>
 
-        <DockPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="AddEmplyeeBtn" Width="200" Height="50" Margin="5" FontSize="20">Neu</Button>
-            <Button x:Name="UpdateEmplyeeBtn" Width="200" Height="50" Margin="5" FontSize="20">Ändern</Button>
-            <Button x:Name="DeleteEmplyeeBtn" Width="200" Height="50" Margin="5" FontSize="20">Entfernen</Button>
-        </DockPanel>
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="AddEmplyeeBtn" Grid.Column="0" MinWidth="50" Width="200" Height="50" Margin="5" FontSize="20">Neu</Button>
+            <Button x:Name="UpdateEmplyeeBtn" Grid.Column="1" MinWidth="50" Width="200" Height="50" Margin="5" FontSize="20">Ändern</Button>
+            <Button x:Name="DeleteEmplyeeBtn" Grid.Column="2" MinWidth="50" Width="200" Height="50" Margin="5" FontSize="20">Entfernen</Button>
+        </Grid>
 
     </Grid>
 </Page>
