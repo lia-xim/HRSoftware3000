@@ -30,14 +30,18 @@
 
             <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" >Füge einen Mitarbeiter hinzu:</Label>
             
-            <Border x:Name="border" Grid.Column="1" Grid.Row="1" Grid.RowSpan="5" Grid.ColumnSpan="4" BorderThickness="1px" BorderBrush="Black" CornerRadius="25" ></Border>
+            <Border x:Name="border" Grid.Column="1" Grid.Row="1" Grid.RowSpan="5" Grid.ColumnSpan="4" BorderThickness="1px" BorderBrush="Black" CornerRadius="25" >
+                <Border.BitmapEffect>
+                    <DropShadowBitmapEffect Color="Black" Softness="0.3" Direction="-50"></DropShadowBitmapEffect>
+                </Border.BitmapEffect>
+            </Border>
             
-            <Label Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">NachName</Label>
-            <Label Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Vorname</Label>
-            <Label Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Abteilung</Label>
-            <Label Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Telefon</Label>
+            <Label Grid.Row="2" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">NachName</Label>
+            <Label Grid.Row="3" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Vorname</Label>
+            <Label Grid.Row="4" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Abteilung</Label>
+            <Label Grid.Row="5" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Telefon</Label>
 
-            <TextBox Grid.Row="2" Grid.Column="2" Width="200px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center">  </TextBox>
+            <TextBox Grid.Row="2" Grid.Column="2" Width="200px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
             <TextBox Grid.Row="3" Grid.Column="2" Width="200px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
             <TextBox Grid.Row="4" Grid.Column="2" Width="200px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
             <TextBox Grid.Row="5" Grid.Column="2" Width="200px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
