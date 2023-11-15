@@ -20,9 +20,34 @@ namespace HRSoftware3000.Pages
     /// </summary>
     public partial class employees : Page
     {
+        public Boolean addEmplyeeBtnClicked;
+
         public employees()
         {
             InitializeComponent();
+        }
+
+        private void goToEmployeesAddPage(object sender, RoutedEventArgs e)
+        {
+            Window window = new employeesAddPage();  
+            window.Show();
+            /*
+            addEmplyeeBtnClicked = true;
+            if (Application.Current.MainWindow.Visibility == Visibility.Visible)
+            {
+                MainWindow main = new MainWindow();
+                main.MainWindowFrame.Source = new Uri("Pages/employeesAddPage.xaml", UriKind.Relative);
+            }
+            */
+        }
+
+        private void goToEmployeesUpdatePage(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current.MainWindow.Visibility == Visibility.Visible)
+            {
+                MainWindow main = new MainWindow();
+                main.MainWindowFrame.Source = new Uri("Pages/employeesUpdatePage.xaml", UriKind.Relative);
+            }
         }
     }
 }

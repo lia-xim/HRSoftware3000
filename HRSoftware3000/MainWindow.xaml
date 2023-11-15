@@ -1,4 +1,6 @@
 ﻿<Window x:Class="HRSoftware3000.MainWindow"
+        x:FieldModifier="public"
+        x:Name="mainWindow"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -41,7 +43,7 @@
                 <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
             </DockPanel>
 
-            <Frame x:Name="mainWindowFrame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" NavigationUIVisibility="Hidden" Source="/Pages/dashboard.xaml" Grid.Column="1" Grid.RowSpan="5" Grid.ColumnSpan="2">
+            <Frame x:Name="MainWindowFrame" x:FieldModifier="public" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" NavigationUIVisibility="Hidden" Source="/Pages/dashboard.xaml" Grid.Column="1" Grid.RowSpan="5" Grid.ColumnSpan="2">
                 
             </Frame>
         </Grid>

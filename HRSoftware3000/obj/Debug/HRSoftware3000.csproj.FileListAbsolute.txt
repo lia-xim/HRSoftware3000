@@ -30,3 +30,13 @@ C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\bin\Debug\Micr
 C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\bin\Debug\Microsoft.Xaml.Behaviors.xml
 C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\App.baml
 C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\HRSoftware3000.csproj.CopyComplete
+C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\employeesAddPage.g.cs
+C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\employeesUpdatePage.g.cs
+C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\ganttDiagrammPage.g.cs
+C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\projectAddPage.g.cs
+C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\projectUpdatePage.g.cs
+C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\employeesAddPage.baml
+C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\employeesUpdatePage.baml
+C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\ganttDiagrammPage.baml
+C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\projectAddPage.baml
+C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\projectUpdatePage.baml

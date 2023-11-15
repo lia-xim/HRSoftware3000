@@ -74,8 +74,8 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button x:Name="AddEmplyeeBtn" Grid.Column="0" MinWidth="50" Width="200" Height="50" Margin="5" FontSize="20">Neu</Button>
-            <Button x:Name="UpdateEmplyeeBtn" Grid.Column="1" MinWidth="50" Width="200" Height="50" Margin="5" FontSize="20">Ändern</Button>
+            <Button x:Name="AddEmplyeeBtn" Click="goToEmployeesAddPage" Grid.Column="0" MinWidth="50" Width="200" Height="50" Margin="5" FontSize="20">Neu</Button>
+            <Button x:Name="UpdateEmplyeeBtn" Click="goToEmployeesUpdatePage" Grid.Column="1" MinWidth="50" Width="200" Height="50" Margin="5" FontSize="20">Ändern</Button>
             <Button x:Name="DeleteEmplyeeBtn" Grid.Column="2" MinWidth="50" Width="200" Height="50" Margin="5" FontSize="20">Entfernen</Button>
         </Grid>
 

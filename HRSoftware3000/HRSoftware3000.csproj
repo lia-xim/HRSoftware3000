@@ -86,7 +86,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\employeesAddPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\employeesUpdatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ganttDiagrammPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\projectAddPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\projects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\projectUpdatePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -98,8 +118,23 @@
     <Compile Include="Pages\employees.xaml.cs">
       <DependentUpon>employees.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\employeesAddPage.xaml.cs">
+      <DependentUpon>employeesAddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\employeesUpdatePage.xaml.cs">
+      <DependentUpon>employeesUpdatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ganttDiagrammPage.xaml.cs">
+      <DependentUpon>ganttDiagrammPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\projectAddPage.xaml.cs">
+      <DependentUpon>projectAddPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\projects.xaml.cs">
       <DependentUpon>projects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\projectUpdatePage.xaml.cs">
+      <DependentUpon>projectUpdatePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
