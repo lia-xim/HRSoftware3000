@@ -9,6 +9,76 @@
       Title="projects">
 
     <Grid Background="Green">
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <FlowDocumentReader ViewingMode="Scroll" IsFindEnabled="True" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <FlowDocument>
+                <Table CellSpacing="5">
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+
+
+                    <TableRowGroup x:Name="employeeTable">
+
+                        <TableRow>
+                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
+                                <Paragraph FontSize="20pt" FontWeight="Bold">Name</Paragraph>
+                            </TableCell>
+                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
+                                <Paragraph FontSize="20pt" FontWeight="Bold">Vorname</Paragraph>
+                            </TableCell>
+                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
+                                <Paragraph FontSize="20pt" FontWeight="Bold">Abteilung</Paragraph>
+                            </TableCell>
+                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
+                                <Paragraph FontSize="20pt" FontWeight="Bold">Telefon</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow Background="LightGray">
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Ramahi</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Matthias</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">ABC</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">123</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentReader>
+
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="AddProjectBtn" Grid.Column="0" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Neu</Button>
+            <Button x:Name="UpdateProjectBtn" Grid.Column="1" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Ändern</Button>
+            <Button x:Name="DeleteProjectBtn" Grid.Column="2" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Entfernen</Button>
+            <Button x:Name="GanttProjectBtn" Grid.Column="3" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Gantt</Button>
+        </Grid>
     </Grid>
 </Page>
