@@ -18,7 +18,7 @@ namespace HRSoftware3000.Pages
     /// <summary>
     /// Interaktionslogik für projectAddPage.xaml
     /// </summary>
-    public partial class projectAddPage : Page
+    public partial class projectAddPage : Window
     {
         public projectAddPage()
         {

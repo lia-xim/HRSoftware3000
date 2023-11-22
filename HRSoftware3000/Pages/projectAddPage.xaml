@@ -1,4 +1,4 @@
-﻿<Page x:Class="HRSoftware3000.Pages.projectAddPage"
+﻿<Window x:Class="HRSoftware3000.Pages.projectAddPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,9 +6,60 @@
       xmlns:local="clr-namespace:HRSoftware3000.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="projectAddPage">
+    Title="HRSoftware3000" MinWidth="800" MinHeight="450" Height="450" Width="800" MaxHeight="900" MaxWidth="1600" WindowStyle="ThreeDBorderWindow">
 
-    <Grid Background="Orange">
-        
+    <Grid Background="White">
+        <Grid Cursor="">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" >Füge ein Projekt hinzu:</Label>
+
+            <Border x:Name="border" Grid.Column="0" Grid.Row="0" Grid.RowSpan="9" Grid.ColumnSpan="6" BorderThickness="1px" BorderBrush="Black" CornerRadius="25" >
+                <Border.BitmapEffect>
+                    <DropShadowBitmapEffect Color="Black" Softness="0.3" Direction="-50"></DropShadowBitmapEffect>
+                </Border.BitmapEffect>
+            </Border>
+
+            <Label Grid.Row="1" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Bezeichnung</Label>
+            <Label Grid.Row="2" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Startdatum</Label>
+            <Label Grid.Row="3" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Enddatum</Label>
+            <Label Grid.Row="4" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Verantwortlicher</Label>
+
+            <TextBox Grid.Row="1" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+
+            <Label Grid.Row="1" Margin="20,0,0,0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">Nummer</Label>
+            <Label Grid.Row="2" Margin="20,0,0,0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">Phase</Label>
+            <Label Grid.Row="3" Margin="20,0,0,0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">Dauer</Label>
+            <Label Grid.Row="4" Margin="20,0,0,0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">Vorgänger</Label>
+
+            <TextBox Grid.Row="1" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Cursor=""></TextBox>
+
+
+            <Button x:Name="SaveAddEmplyeeBtn" Grid.Column="4" Grid.Row="7" Grid.RowSpan="2" MinWidth="50" Width="Auto" Height="40px" Margin="15" FontSize="14">Speichern</Button>
+        </Grid>
     </Grid>
-</Page>
+</Window>

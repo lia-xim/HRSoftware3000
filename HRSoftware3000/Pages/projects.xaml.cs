@@ -24,5 +24,11 @@ namespace HRSoftware3000.Pages
         {
             InitializeComponent();
         }
+
+        private void addProjectButton(object sender, RoutedEventArgs e)
+        {
+            Window window = new projectAddPage();
+            window.Show();
+        }
     }
 }

@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="projects">
 
-    <Grid Background="Green">
+    <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -36,31 +36,31 @@
 
                         <TableRow>
                             <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Name</Paragraph>
+                                <Paragraph FontSize="20pt" FontWeight="Bold">Projektbezeichnung</Paragraph>
                             </TableCell>
                             <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Vorname</Paragraph>
+                                <Paragraph FontSize="20pt" FontWeight="Bold">Startdatum</Paragraph>
                             </TableCell>
                             <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Abteilung</Paragraph>
+                                <Paragraph FontSize="20pt" FontWeight="Bold">Enddatum</Paragraph>
                             </TableCell>
                             <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Telefon</Paragraph>
+                                <Paragraph FontSize="20pt" FontWeight="Bold">Verantwortlicher</Paragraph>
                             </TableCell>
                         </TableRow>
 
                         <TableRow Background="LightGray">
                             <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">Ramahi</Paragraph>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">TestProjekt</Paragraph>
                             </TableCell>
                             <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">Matthias</Paragraph>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">17.10.2023</Paragraph>
                             </TableCell>
                             <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">ABC</Paragraph>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">18.10.2023</Paragraph>
                             </TableCell>
                             <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">123</Paragraph>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Matthias Ramahi</Paragraph>
                             </TableCell>
                         </TableRow>
                     </TableRowGroup>
@@ -75,7 +75,7 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button x:Name="AddProjectBtn" Grid.Column="0" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Neu</Button>
+            <Button x:Name="AddProjectBtn" Click="addProjectButton" Grid.Column="0" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Neu</Button>
             <Button x:Name="UpdateProjectBtn" Grid.Column="1" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Ändern</Button>
             <Button x:Name="DeleteProjectBtn" Grid.Column="2" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Entfernen</Button>
             <Button x:Name="GanttProjectBtn" Grid.Column="3" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Gantt</Button>
