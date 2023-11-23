@@ -58,8 +58,26 @@
             <TextBox Grid.Row="3" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
             <TextBox Grid.Row="4" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Cursor=""></TextBox>
 
+            <DataGrid Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="3" HorizontalAlignment="Center" Margin="5">
+                <DataGrid.Columns>
+                    <DataGridTextColumn>
+                        <DataGridTextColumn.Header>Nummer</DataGridTextColumn.Header>
+                        
+                    </DataGridTextColumn>
+                    <DataGridTextColumn>
+                        <DataGridTextColumn.Header>Phase</DataGridTextColumn.Header>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn>
+                        <DataGridTextColumn.Header>Dauer</DataGridTextColumn.Header>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn>
+                        <DataGridTextColumn.Header>Vorgänger</DataGridTextColumn.Header>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
 
-            <Button x:Name="SaveAddEmplyeeBtn" Grid.Column="4" Grid.Row="7" Grid.RowSpan="2" MinWidth="50" Width="Auto" Height="40px" Margin="15" FontSize="14">Speichern</Button>
+            </DataGrid>
+
+            <Button x:Name="SaveAddEmplyeeBtn" Grid.Column="5" Grid.Row="7" MinWidth="50" Width="Auto" Height="40px" Margin="15,4,15,4" FontSize="14">Speichern</Button>
         </Grid>
     </Grid>
 </Window>

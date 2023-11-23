@@ -21,52 +21,22 @@
             <RowDefinition Height="100"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <FlowDocumentReader ViewingMode="Scroll" IsFindEnabled="True" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2">
-            <FlowDocument>
-                <Table CellSpacing="5">
-                    <Table.Columns>
-                        <TableColumn/>
-                        <TableColumn/>
-                        <TableColumn/>
-                        <TableColumn/>
-                    </Table.Columns>
-
-
-                    <TableRowGroup x:Name="employeeTable">
-
-                        <TableRow>
-                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Name</Paragraph>
-                            </TableCell>
-                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Vorname</Paragraph>
-                            </TableCell>
-                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Abteilung</Paragraph>
-                            </TableCell>
-                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Telefon</Paragraph>
-                            </TableCell>
-                        </TableRow>
-                        
-                        <TableRow Background="LightGray">
-                            <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">Ramahi</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">Matthias</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">ABC</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">123</Paragraph>
-                            </TableCell>
-                        </TableRow>
-                    </TableRowGroup>
-                </Table>
-            </FlowDocument>
-        </FlowDocumentReader>
+        <DataGrid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" FontSize="20" HorizontalAlignment="Stretch" Margin="5">
+            <DataGrid.Columns>
+                <DataGridTextColumn>
+                    <DataGridTextColumn.Header>Name</DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn>
+                    <DataGridTextColumn.Header>Vorname</DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn>
+                    <DataGridTextColumn.Header>Abteilung</DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn>
+                    <DataGridTextColumn.Header>Telefon</DataGridTextColumn.Header>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
 
         <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="">
             <Grid.ColumnDefinitions>

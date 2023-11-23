@@ -21,53 +21,23 @@
             <RowDefinition Height="100"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <FlowDocumentReader ViewingMode="Scroll" IsFindEnabled="True" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2">
-            <FlowDocument>
-                <Table CellSpacing="5">
-                    <Table.Columns>
-                        <TableColumn/>
-                        <TableColumn/>
-                        <TableColumn/>
-                        <TableColumn/>
-                    </Table.Columns>
-
-
-                    <TableRowGroup x:Name="employeeTable">
-
-                        <TableRow>
-                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Projektbezeichnung</Paragraph>
-                            </TableCell>
-                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Startdatum</Paragraph>
-                            </TableCell>
-                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Enddatum</Paragraph>
-                            </TableCell>
-                            <TableCell ColumnSpan="1" BorderBrush="Black" BorderThickness="1px" TextAlignment="Center">
-                                <Paragraph FontSize="20pt" FontWeight="Bold">Verantwortlicher</Paragraph>
-                            </TableCell>
-                        </TableRow>
-
-                        <TableRow Background="LightGray">
-                            <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">TestProjekt</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">17.10.2023</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">18.10.2023</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="14pt" FontWeight="Bold">Matthias Ramahi</Paragraph>
-                            </TableCell>
-                        </TableRow>
-                    </TableRowGroup>
-                </Table>
-            </FlowDocument>
-        </FlowDocumentReader>
-
+        <DataGrid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" FontSize="20" HorizontalAlignment="Stretch" Margin="5">
+            <DataGrid.Columns>
+                <DataGridTextColumn>
+                    <DataGridTextColumn.Header>Projektbezeichnung</DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn>
+                    <DataGridTextColumn.Header>Startdatum</DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn>
+                    <DataGridTextColumn.Header>Enddatum</DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn>
+                    <DataGridTextColumn.Header>Verantwortlicher</DataGridTextColumn.Header>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        
         <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
