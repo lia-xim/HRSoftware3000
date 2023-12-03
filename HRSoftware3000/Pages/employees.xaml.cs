@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,10 +22,19 @@ namespace HRSoftware3000.Pages
     public partial class employees : Page
     {
         public Boolean addEmplyeeBtnClicked;
-
+        DataTable dt = new DataTable();
         public employees()
         {
             InitializeComponent();
+        }
+
+        private void FillDataTable(DataTable dt)
+        {
+            DataRow dr = dt.NewRow();
+            dr["Column1"] = "Value1";
+            dr["Column2"] = "Value2";
+            dr["Column3"] = "Value3";
+            dt.Rows.Add(dr);
         }
 
         private void goToEmployeesAddPage(object sender, RoutedEventArgs e)
@@ -48,6 +58,20 @@ namespace HRSoftware3000.Pages
                 MainWindow main = new MainWindow();
                 main.MainWindowFrame.Source = new Uri("Pages/employeesUpdatePage.xaml", UriKind.Relative);
             }
+        }
+
+        private void fillData(object sender, RoutedEventArgs e)
+        {/*
+            DataTable dt = new DataTable();
+                //((DataTable)employeeDataGrid.ItemsSource);
+
+            DataRow dr = dt.NewRow();
+            dr["Name"] = "Value1";
+            dr["Vorname"] = "Value2";
+            dr["Abteilung"] = "Value3";
+            dr["Telefon"] = "Value4";
+            dt.Rows.Add(dr);
+            employeeDataGrid.ItemsSource = dt.Rows;*/
         }
     }
 }

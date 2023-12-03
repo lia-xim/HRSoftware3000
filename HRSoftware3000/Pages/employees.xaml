@@ -21,18 +21,18 @@
             <RowDefinition Height="100"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <DataGrid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" FontSize="20" HorizontalAlignment="Stretch" Margin="5">
+        <DataGrid x:Name="employeeDataGrid" Loaded="fillData" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" FontSize="20" HorizontalAlignment="Stretch" Margin="5">
             <DataGrid.Columns>
-                <DataGridTextColumn>
+                <DataGridTextColumn x:Name="Name">
                     <DataGridTextColumn.Header>Name</DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn>
+                <DataGridTextColumn x:Name="Vorname">
                     <DataGridTextColumn.Header>Vorname</DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn>
+                <DataGridTextColumn x:Name="Abteilung">
                     <DataGridTextColumn.Header>Abteilung</DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn>
+                <DataGridTextColumn x:Name="Telefon">
                     <DataGridTextColumn.Header>Telefon</DataGridTextColumn.Header>
                 </DataGridTextColumn>
             </DataGrid.Columns>
