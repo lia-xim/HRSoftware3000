@@ -58,7 +58,7 @@
             <TextBox Grid.Row="3" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
             <TextBox Grid.Row="4" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Cursor=""></TextBox>
 
-            <DataGrid Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="3" HorizontalAlignment="Center" Margin="5">
+            <DataGrid AllowDrop="False" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="3" HorizontalAlignment="Center" Margin="5">
                 <DataGrid.Columns>
                     <DataGridTextColumn>
                         <DataGridTextColumn.Header>Nummer</DataGridTextColumn.Header>

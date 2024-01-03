@@ -30,5 +30,11 @@ namespace HRSoftware3000.Pages
             Window window = new projectAddPage();
             window.Show();
         }
+
+        private void ganttDiagramPage(object sender, RoutedEventArgs e)
+        {
+            Window window = new ganttDiagrammPage();
+            window.Show();
+        }
     }
 }

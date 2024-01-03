@@ -41,14 +41,7 @@ namespace HRSoftware3000.Pages
         {
             Window window = new employeesAddPage();  
             window.Show();
-            /*
-            addEmplyeeBtnClicked = true;
-            if (Application.Current.MainWindow.Visibility == Visibility.Visible)
-            {
-                MainWindow main = new MainWindow();
-                main.MainWindowFrame.Source = new Uri("Pages/employeesAddPage.xaml", UriKind.Relative);
-            }
-            */
+
         }
 
         private void goToEmployeesUpdatePage(object sender, RoutedEventArgs e)

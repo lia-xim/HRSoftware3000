@@ -50,7 +50,7 @@
             <Button x:Name="AddProjectBtn" Click="addProjectButton" Grid.Column="0" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Neu</Button>
             <Button x:Name="UpdateProjectBtn" Grid.Column="1" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Ändern</Button>
             <Button x:Name="DeleteProjectBtn" Grid.Column="2" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Entfernen</Button>
-            <Button x:Name="GanttProjectBtn" Grid.Column="3" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Gantt</Button>
+            <Button x:Name="GanttProjectBtn" Click="ganttDiagramPage" Grid.Column="3" MinWidth="100" Width="Auto" Height="50" Margin="5" FontSize="14">Gantt</Button>
         </Grid>
     </Grid>
 </Page>
