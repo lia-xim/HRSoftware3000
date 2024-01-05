@@ -42,19 +42,30 @@ namespace HRSoftware3000.Pages
                 befehl = dBVerbindung.CreateCommand();
                 befehl.CommandText = "SELECT * FROM Mitarbeiter";
                 datenleser = befehl.ExecuteReader();
+
+                var column = new DataGridTextColumn();
+                column.Header = "Name";
+                column.Binding = new Binding("Name");
+                employeeDataGrid.Columns.Add(column);
+
+                var column2 = new DataGridTextColumn();
+                column2.Header = "Vorname";
+                column2.Binding = new Binding("Vorname");
+                employeeDataGrid.Columns.Add(column2);
+
+                var column3 = new DataGridTextColumn();
+                column3.Header = "Abteilung";
+                column3.Binding = new Binding("Abteilung");
+                employeeDataGrid.Columns.Add(column3);
+
+                var column4 = new DataGridTextColumn();
+                column4.Header = "Telefon";
+                column4.Binding = new Binding("Telefon");
+                employeeDataGrid.Columns.Add(column4);
+
                 while (datenleser.Read())
                 {
-                    for (int i = 1; i <= 4; ++i)
-                    {
-                        var column = new DataGridTextColumn();
-                        column.Header = "Column" + i;
-                        column.Binding = new Binding("Column" + i);
-                        employeeDataGrid.Columns.Add(column);
-                    }
-
-                    // Erstellen und Hinzufügen von zwei Zeilen mit gefälschten Daten, die angezeigt werden sollen
-                    employeeDataGrid.Items.Add(new DataItem { Column1 = "a.1", Column2 = "a.2", Column3 = "a.3", Column4 = "a.4" });
-                    employeeDataGrid.Items.Add(new DataItem { Column1 = "b.1", Column2 = "b.2", Column3 = "b.3", Column4 = "b.4" });
+                    employeeDataGrid.Items.Add(new DataItem { Name = "a.1", Vorname = "a.2", Abteilung = "a.3", Telefon = "a.4" });
 
                     //MessageBox.Show(datenleser.GetString(1));
                     //MessageBox.Show("Erste Spalte: " + datenleser.GetInt32(0));
@@ -89,11 +100,9 @@ namespace HRSoftware3000.Pages
 
     public class DataItem
     {
-        public string Column1 { get; set; }
-        public string Column2 { get; set; }
-        public string Column3 { get; set; }
-        public string Column4 { get; set; }
+        public string Name { get; set; }
+        public string Vorname { get; set; }
+        public string Abteilung { get; set; }
+        public string Telefon { get; set; }
     }
-
-
 }

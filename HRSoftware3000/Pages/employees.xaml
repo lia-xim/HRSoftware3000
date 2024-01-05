@@ -22,20 +22,6 @@
         </Grid.RowDefinitions>
 
         <DataGrid x:Name="employeeDataGrid" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" FontSize="20" HorizontalAlignment="Stretch" Margin="5">
-            <DataGrid.Columns>
-                <DataGridTextColumn x:Name="name">
-                    <DataGridTextColumn.Header>Name</DataGridTextColumn.Header>
-                </DataGridTextColumn>
-                <DataGridTextColumn x:Name="Vorname">
-                    <DataGridTextColumn.Header>Vorname</DataGridTextColumn.Header>
-                </DataGridTextColumn>
-                <DataGridTextColumn x:Name="Abteilung">
-                    <DataGridTextColumn.Header>Abteilung</DataGridTextColumn.Header>
-                </DataGridTextColumn>
-                <DataGridTextColumn x:Name="Telefon">
-                    <DataGridTextColumn.Header>Telefon</DataGridTextColumn.Header>
-                </DataGridTextColumn>
-            </DataGrid.Columns>
         </DataGrid>
 
         <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="">
