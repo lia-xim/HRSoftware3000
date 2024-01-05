@@ -65,10 +65,10 @@ namespace HRSoftware3000.Pages
 
                 while (datenleser.Read())
                 {
-                    employeeDataGrid.Items.Add(new DataItem { Name = "a.1", Vorname = "a.2", Abteilung = "a.3", Telefon = "a.4" });
+                    employeeDataGrid.Items.Add(new DataItem { Name = datenleser.GetString(1), Vorname = datenleser.GetString(1), Abteilung = "a.3", Telefon = "a.4" });
 
                     //MessageBox.Show(datenleser.GetString(1));
-                    //MessageBox.Show("Erste Spalte: " + datenleser.GetInt32(0));
+                    //MessageBox.Show("Erste Spalte: " + datenleser.GetString(1));
                 }
             }
             catch (Exception ausnahme)
