@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -23,11 +24,12 @@ namespace HRSoftware3000.Pages
     {
         public Boolean addEmplyeeBtnClicked;
         DataTable dt = new DataTable();
+        Grid MainGrid;
         public employees()
         {
             InitializeComponent();
             string verbindungsstring = @"Provider=Microsoft.ACE.OLEDB.12.0;
-                                       Data Source=C:\Users\Nikolas\source\repos\HRSoftware3000\HRSoftware3000\Projekte1 neu.accdb";
+                                       Data Source=C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\Projekte1 neu.accdb";
             System.Data.OleDb.OleDbConnection dBVerbindung = null;
             System.Data.OleDb.OleDbCommand befehl = null;
             System.Data.OleDb.OleDbDataReader datenleser = null;
@@ -42,8 +44,20 @@ namespace HRSoftware3000.Pages
                 datenleser = befehl.ExecuteReader();
                 while (datenleser.Read())
                 {
-                    MessageBox.Show(datenleser.GetString(1));
-                    MessageBox.Show("Erste Spalte: " + datenleser.GetInt32(0));
+                    for (int i = 1; i <= 4; ++i)
+                    {
+                        var column = new DataGridTextColumn();
+                        column.Header = "Column" + i;
+                        column.Binding = new Binding("Column" + i);
+                        employeeDataGrid.Columns.Add(column);
+                    }
+
+                    // Erstellen und Hinzufügen von zwei Zeilen mit gefälschten Daten, die angezeigt werden sollen
+                    employeeDataGrid.Items.Add(new DataItem { Column1 = "a.1", Column2 = "a.2", Column3 = "a.3", Column4 = "a.4" });
+                    employeeDataGrid.Items.Add(new DataItem { Column1 = "b.1", Column2 = "b.2", Column3 = "b.3", Column4 = "b.4" });
+
+                    //MessageBox.Show(datenleser.GetString(1));
+                    //MessageBox.Show("Erste Spalte: " + datenleser.GetInt32(0));
                 }
             }
             catch (Exception ausnahme)
@@ -54,15 +68,6 @@ namespace HRSoftware3000.Pages
             {
                 if (offen == true) dBVerbindung.Close();
             }
-        }
-
-        private void FillDataTable(DataTable dt)
-        {
-            DataRow dr = dt.NewRow();
-            dr["Column1"] = "Value1";
-            dr["Column2"] = "Value2";
-            dr["Column3"] = "Value3";
-            dt.Rows.Add(dr);
         }
 
         private void goToEmployeesAddPage(object sender, RoutedEventArgs e)
@@ -80,19 +85,15 @@ namespace HRSoftware3000.Pages
                 main.MainWindowFrame.Source = new Uri("Pages/employeesUpdatePage.xaml", UriKind.Relative);
             }
         }
-
-        private void fillData(object sender, RoutedEventArgs e)
-        {/*
-            DataTable dt = new DataTable();
-                //((DataTable)employeeDataGrid.ItemsSource);
-
-            DataRow dr = dt.NewRow();
-            dr["Name"] = "Value1";
-            dr["Vorname"] = "Value2";
-            dr["Abteilung"] = "Value3";
-            dr["Telefon"] = "Value4";
-            dt.Rows.Add(dr);
-            employeeDataGrid.ItemsSource = dt.Rows;*/
-        }
     }
+
+    public class DataItem
+    {
+        public string Column1 { get; set; }
+        public string Column2 { get; set; }
+        public string Column3 { get; set; }
+        public string Column4 { get; set; }
+    }
+
+
 }

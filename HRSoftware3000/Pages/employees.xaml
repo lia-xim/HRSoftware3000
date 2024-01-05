@@ -21,9 +21,9 @@
             <RowDefinition Height="100"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <DataGrid x:Name="employeeDataGrid" Loaded="fillData" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" FontSize="20" HorizontalAlignment="Stretch" Margin="5">
+        <DataGrid x:Name="employeeDataGrid" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" FontSize="20" HorizontalAlignment="Stretch" Margin="5">
             <DataGrid.Columns>
-                <DataGridTextColumn x:Name="Name">
+                <DataGridTextColumn x:Name="name">
                     <DataGridTextColumn.Header>Name</DataGridTextColumn.Header>
                 </DataGridTextColumn>
                 <DataGridTextColumn x:Name="Vorname">
