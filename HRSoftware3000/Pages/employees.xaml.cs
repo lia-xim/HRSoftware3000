@@ -29,7 +29,7 @@ namespace HRSoftware3000.Pages
         {
             InitializeComponent();
             string verbindungsstring = @"Provider=Microsoft.ACE.OLEDB.12.0;
-                                       Data Source=C:\Users\ZeroLogOn\Documents\GitHub\HRSoftware3000\HRSoftware3000\Projekte1 neu.accdb";
+                                       Data Source=./Projekte1 neu.accdb";
             System.Data.OleDb.OleDbConnection dBVerbindung = null;
             System.Data.OleDb.OleDbCommand befehl = null;
             System.Data.OleDb.OleDbDataReader datenleser = null;
@@ -65,10 +65,8 @@ namespace HRSoftware3000.Pages
 
                 while (datenleser.Read())
                 {
-                    employeeDataGrid.Items.Add(new DataItem { Name = datenleser.GetString(1), Vorname = datenleser.GetString(1), Abteilung = "a.3", Telefon = "a.4" });
-
-                    //MessageBox.Show(datenleser.GetString(1));
-                    //MessageBox.Show("Erste Spalte: " + datenleser.GetString(1));
+                    //MessageBox.Show("Erste Value: " + datenleser.GetValue(0) + " Zweite Value: " + datenleser.GetValue(1) + " Dritte Value: " + datenleser.GetValue(2) + " Vierte Value: " + datenleser.GetValue(3) + " Fuenfte Value: " + datenleser.GetValue(4));
+                    employeeDataGrid.Items.Add(new DataItem { Name = datenleser.GetValue(1).ToString(), Vorname = datenleser.GetValue(2).ToString(), Abteilung = datenleser.GetValue(3).ToString(), Telefon = datenleser.GetValue(4).ToString() });
                 }
             }
             catch (Exception ausnahme)
