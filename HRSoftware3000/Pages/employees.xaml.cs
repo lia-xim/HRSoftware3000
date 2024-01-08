@@ -68,6 +68,7 @@ namespace HRSoftware3000.Pages
                     //MessageBox.Show("Erste Value: " + datenleser.GetValue(0) + " Zweite Value: " + datenleser.GetValue(1) + " Dritte Value: " + datenleser.GetValue(2) + " Vierte Value: " + datenleser.GetValue(3) + " Fuenfte Value: " + datenleser.GetValue(4));
                     employeeDataGrid.Items.Add(new DataItem { Name = datenleser.GetValue(1).ToString(), Vorname = datenleser.GetValue(2).ToString(), Abteilung = datenleser.GetValue(3).ToString(), Telefon = datenleser.GetValue(4).ToString() });
                 }
+                dBVerbindung.Close();
             }
             catch (Exception ausnahme)
             {
