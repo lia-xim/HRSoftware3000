@@ -18,23 +18,23 @@ namespace HRSoftware3000.Pages
     /// <summary>
     /// Interaktionslogik für employeesAddPage.xaml
     /// </summary>
-    public partial class employeesAddPage : Window
+    public partial class deleteEmployeePage : Window
     {
         string verbindungsstring = @"Provider=Microsoft.ACE.OLEDB.12.0;
                                        Data Source=./Projekte1 neu.accdb";
         System.Data.OleDb.OleDbConnection dBVerbindung = null;
         System.Data.OleDb.OleDbCommand befehl = null;
         bool offen = false;
-        public employeesAddPage()
+        public deleteEmployeePage()
         {
             InitializeComponent();
 
             Button saveButton = new Button();
-            saveButton.Name = "SaveAddEmployeeBtn";
-            saveButton.Click += addEmployee_Click;
+            saveButton.Name = "DeleteEmployeeBtn";
+            saveButton.Click += deleteEmployee_Click;
 
         }
-        private void addEmployee_Click(object sender, RoutedEventArgs e)
+        private void deleteEmployee_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -42,19 +42,10 @@ namespace HRSoftware3000.Pages
                 dBVerbindung.Open();
                 offen = true;
                 befehl = dBVerbindung.CreateCommand();
-                befehl.CommandText = "INSERT INTO Mitarbeiter ([id],[nachname],[vorname],[abteilung],[telefon]) VALUES(?, ?, ?, ?, ? ); ";
-                int id = 26;
-                string nachn = "Nachname";
-                string vorn = "Vorname";
-                string abteilung = "Abteilung";
-                string telefon = "5555";
-                befehl.Parameters.AddWithValue("id", Id_Text.Text);
-                befehl.Parameters.AddWithValue("nachname", Nachname_Text.Text);
-                befehl.Parameters.AddWithValue("vorname", Vorname_Text.Text);
-                befehl.Parameters.AddWithValue("abteilung", Abteilung_Text.Text);
-                befehl.Parameters.AddWithValue("telefon", Telefon_Text.Text);
+                befehl.CommandText = "DELETE FROM Mitarbeiter Where [Id]=?; ";
+                befehl.Parameters.AddWithValue("?", Id_Text.Text);
                 befehl.ExecuteNonQuery();
-                MessageBox.Show("Mitarbeiter erfolgreich eingefügt." + Environment.NewLine + "Mitarbeiter neu laden um Änderung zu sehen");
+                MessageBox.Show("Mitarbeiter erfolgreich gelöscht." + Environment.NewLine + "Mitarbeiter neu laden um Änderung zu sehen");
             }
             catch (Exception ausnahme)
             {
@@ -67,3 +58,4 @@ namespace HRSoftware3000.Pages
         }
     }
 }
+

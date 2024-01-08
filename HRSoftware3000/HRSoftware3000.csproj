@@ -98,6 +98,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\deleteEmployeePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\projectAddPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -126,6 +130,9 @@
     </Compile>
     <Compile Include="Pages\ganttDiagrammPage.xaml.cs">
       <DependentUpon>ganttDiagrammPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\deleteEmployeePage.xaml.cs">
+      <DependentUpon>deleteEmployeePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\projectAddPage.xaml.cs">
       <DependentUpon>projectAddPage.xaml</DependentUpon>

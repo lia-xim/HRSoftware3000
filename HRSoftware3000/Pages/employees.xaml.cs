@@ -95,6 +95,13 @@ namespace HRSoftware3000.Pages
                 main.MainWindowFrame.Source = new Uri("Pages/employeesUpdatePage.xaml", UriKind.Relative);
             }
         }
+
+        private void goToDeleteEmployeePage(object sender, RoutedEventArgs e)
+        {
+            Window window = new deleteEmployeePage();
+            window.Show();
+
+        }
     }
 
     public class DataItem

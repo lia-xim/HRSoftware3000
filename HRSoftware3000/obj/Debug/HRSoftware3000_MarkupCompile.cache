@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Nikolas\source\repos\HRSoftware3000\HRSoftware3000\App.xaml
-9-920377513
+101006155441
 
-1378525095
+14-322622199
 161300532345
-MainWindow.xaml;Pages\dashboard.xaml;Pages\employees.xaml;Pages\employeesAddPage.xaml;Pages\employeesUpdatePage.xaml;Pages\ganttDiagrammPage.xaml;Pages\projectAddPage.xaml;Pages\projects.xaml;Pages\projectUpdatePage.xaml;
+MainWindow.xaml;Pages\dashboard.xaml;Pages\employees.xaml;Pages\employeesAddPage.xaml;Pages\employeesUpdatePage.xaml;Pages\ganttDiagrammPage.xaml;Pages\deleteEmployeePage.xaml;Pages\projectAddPage.xaml;Pages\projects.xaml;Pages\projectUpdatePage.xaml;
 
 False
 

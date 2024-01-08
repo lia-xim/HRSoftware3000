@@ -82,3 +82,5 @@ C:\Users\Nikolas\source\repos\HRSoftware3000\HRSoftware3000\obj\Debug\HRSoftware
 C:\Users\Nikolas\source\repos\HRSoftware3000\HRSoftware3000\obj\Debug\HRSoftware3000.csproj.CopyComplete
 C:\Users\Nikolas\source\repos\HRSoftware3000\HRSoftware3000\obj\Debug\HRSoftware3000.exe
 C:\Users\Nikolas\source\repos\HRSoftware3000\HRSoftware3000\obj\Debug\HRSoftware3000.pdb
+C:\Users\Nikolas\source\repos\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\deleteEmployeePage.g.cs
+C:\Users\Nikolas\source\repos\HRSoftware3000\HRSoftware3000\obj\Debug\Pages\deleteEmployeePage.baml
