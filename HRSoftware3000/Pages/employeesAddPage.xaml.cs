@@ -35,10 +35,12 @@ namespace HRSoftware3000.Pages
             saveButton.Name = "SaveAddEmployeeBtn";
             saveButton.Click += addEmployee_Click;
             string nachname = null;
+
         }
         private void addEmployee_Click(object sender, RoutedEventArgs e)
         {
-            //inserted ids 4; 10; 20; 21; 22; 23; 24; 25
+            //inserted ids 4; 10; 20; 21; 22; 23; 24; 25; 26
+            //MessageBox.Show("ID: " + Id_Text.Text);
             nachname = Nachname_Text.Text;
             try
             {
@@ -47,12 +49,12 @@ namespace HRSoftware3000.Pages
                 offen = true;
                 befehl = dBVerbindung.CreateCommand();
                 befehl.CommandText = "INSERT INTO Mitarbeiter ([id],[nachname],[vorname],[abteilung],[telefon]) VALUES(?, ?, ?, ?, ? ); ";
-                int id = 25;
+                int id = 26;
                 string nachn = "Nachname";
                 string vorn = "Vorname";
                 string abteilung = "Abteilung";
                 string telefon = "5555";
-                befehl.Parameters.AddWithValue("id", id);
+                befehl.Parameters.AddWithValue("id", Id_Text.Text);
                 befehl.Parameters.AddWithValue("nachname", Nachname_Text.Text);
                 befehl.Parameters.AddWithValue("vorname", Vorname_Text.Text);
                 befehl.Parameters.AddWithValue("abteilung", Abteilung_Text.Text);

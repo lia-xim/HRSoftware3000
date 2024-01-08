@@ -17,6 +17,7 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
@@ -26,9 +27,10 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" >Füge einen Mitarbeiter hinzu:</Label>
+            <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" >Füge einen Mitarbeiter hinzu:</Label>
             
             <Border x:Name="border" Grid.Column="1" Grid.Row="1" Grid.RowSpan="5" Grid.ColumnSpan="4" BorderThickness="1px" BorderBrush="Black" CornerRadius="25" >
                 <Border.BitmapEffect>
@@ -36,15 +38,18 @@
                 </Border.BitmapEffect>
             </Border>
             
+            <Label Grid.Row="1" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Id</Label>
             <Label Grid.Row="2" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">NachName</Label>
             <Label Grid.Row="3" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Vorname</Label>
             <Label Grid.Row="4" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Abteilung</Label>
             <Label Grid.Row="5" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Telefon</Label>
 
+
             <TextBox x:Name="Nachname_Text" Grid.Row="2" Grid.Column="2" Width="200px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
             <TextBox x:Name="Vorname_Text" Grid.Row="3" Grid.Column="2" Width="200px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
             <TextBox x:Name="Abteilung_Text" Grid.Row="4" Grid.Column="2" Width="200px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
             <TextBox x:Name="Telefon_Text" Grid.Row="5" Grid.Column="2" Width="200px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox x:Name="Id_Text" Grid.Row="1" Grid.Column="2" Width="200px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
 
             <Button x:Name="SaveAddEmployeeBtn" Click="addEmployee_Click" Grid.Column="4" Grid.Row="5" MinWidth="50" Width="Auto" Height="Auto" Margin="15" FontSize="14" Cursor="Hand">Speichern</Button>
         </Grid>
