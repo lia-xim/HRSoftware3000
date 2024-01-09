@@ -43,26 +43,26 @@
             <Label Grid.Row="3" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Enddatum</Label>
             <Label Grid.Row="4" Margin="20,0,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">Verantwortlicher</Label>
 
-            <TextBox Grid.Row="1" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox x:Name="Bezeichnung_Text" Grid.Row="1" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox x:Name="Startdatum_Text" Grid.Row="2" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox x:Name="Enddatum_Text" Grid.Row="3" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox x:Name="Verantwortlicher_Text" Grid.Row="4" Grid.Column="2" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
 
-            <Label Grid.Row="1" Margin="20,0,0,0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">Nummer</Label>
-            <Label Grid.Row="2" Margin="20,0,0,0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">Phase</Label>
+            <Label Grid.Row="1" Margin="20,0,0,0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">Id</Label>
+            <Label Grid.Row="2" Margin="20,0,0,0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">Startphase</Label>
             <Label Grid.Row="3" Margin="20,0,0,0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">Dauer</Label>
             <Label Grid.Row="4" Margin="20,0,0,0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">Vorgänger</Label>
 
-            <TextBox Grid.Row="1" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Cursor=""></TextBox>
+            <TextBox x:Name="Id_Text" Grid.Row="1" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox x:Name="Startphase_Text" Grid.Row="2" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox x:Name="Dauer_Text" Grid.Row="3" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox x:Name="Vorgaenger_Text" Grid.Row="4" Grid.Column="4" Width="130px" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Cursor=""></TextBox>
 
             <DataGrid AllowDrop="False" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="3" HorizontalAlignment="Center" Margin="5">
                 <DataGrid.Columns>
                     <DataGridTextColumn>
                         <DataGridTextColumn.Header>Nummer</DataGridTextColumn.Header>
-                        
+
                     </DataGridTextColumn>
                     <DataGridTextColumn>
                         <DataGridTextColumn.Header>Phase</DataGridTextColumn.Header>
@@ -77,7 +77,7 @@
 
             </DataGrid>
 
-            <Button x:Name="SaveAddEmplyeeBtn" Grid.Column="5" Grid.Row="7" MinWidth="50" Width="Auto" Height="40px" Margin="15,4,15,4" FontSize="14">Speichern</Button>
+            <Button x:Name="addProjectBtn" Click="addProject_Click" Grid.Column="5" Grid.Row="7" MinWidth="50" Width="Auto" Margin="15,4,10,5" FontSize="14">Hinzufügen</Button>
         </Grid>
     </Grid>
 </Window>
